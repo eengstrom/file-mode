@@ -1,5 +1,16 @@
 # file-mode package
 
-A short description of your package.
+Atom.io package to set syntax mode based on comment string (-*- mode: MODE -*-).
 
-![A screenshot of your spankin' package](https://f.cloud.github.com/assets/69169/2290250/c35d867a-a017-11e3-86be-cd7c5bf3ff9b.gif)
+### Why?
+
+Automatically sets the syntax highlighting mode when Atom can't properly guess it.
+
+### How?
+
+Somewhere in the file, create a comment of this form:
+```
+# -*- mode: NAME -*-
+```
+
+When the file is opened, the syntax will be set to `NAME`, e.g. `CoffeeScript`, `bash`, etc...  The matching is exact and case sensitive, _caveat emptor_.
