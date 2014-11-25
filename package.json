@@ -1,14 +1,15 @@
 {
   "name": "file-mode",
   "main": "./lib/file-mode",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Looks for a syntax mode of the form -*- mode: <NAME> -*- and sets the syntax highlighting to NAME.",
-  "activationEvents": ["file-mode:load"],
+  "activationEvents": [
+    "file-mode:load"
+  ],
   "repository": "https://github.com/dblezek/file-mode",
   "license": "MIT",
   "engines": {
     "atom": ">0.50.0"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }
