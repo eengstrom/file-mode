@@ -1,13 +1,12 @@
 # See https://atom.io/docs/latest/creating-a-package#menus for more details
 'context-menu':
-  '.overlayer':
-      'Run file mode': 'file-mode:load'
+  'atom-workspace': [{label:'Run file mode', command:'file-mode:load'}]
 
 'menu': [
   {
     'label': 'Packages'
     'submenu': [
-      'label': 'file-mode'
+      'label': 'File Mode'
       'submenu': [
         { 'label': 'Load', 'command': 'file-mode:load' }
       ]

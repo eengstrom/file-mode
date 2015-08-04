@@ -3,9 +3,9 @@
   "main": "./lib/file-mode",
   "version": "1.0.1",
   "description": "Looks for a syntax mode of the form -*- mode: <NAME> -*- and sets the syntax highlighting to NAME.",
-  "activationEvents": [
-    "file-mode:load"
-  ],
+  "activationCommands": {
+    "atom-text-editor": ["file-mode:load"]
+  },
   "repository": "https://github.com/dblezek/file-mode",
   "license": "MIT",
   "engines": {
